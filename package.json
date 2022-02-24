@@ -8,7 +8,7 @@
   "scripts": {
     "allure:report": "npx allure generate allure-results --clean && npm run allure:open",
     "allure:open": "npx allure open ./allure-report",
-    "allure:clear": "if exist allure-report rmdir /q /s allure-report && if exist allure-results rmdir /q /s allure-results",
+    "allure:clear": "",
     "pretest": "npm run allure:clear",
     "test": "npx playwright test --reporter=line,allure-playwright || npm run posttest",
     "posttest": "npm run allure:report"
