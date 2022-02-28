@@ -17,13 +17,13 @@ const config: PlaywrightTestConfig = {
     }
   },
   projects: [{
-    name: 'chromium',
+    name: 'chrome',
     use: { ...devices['Desktop Chrome'] },
   }
-    // , {
-    //   name: 'Firefox',
-    //   use: { ...devices['Desktop Firefox'] }
-    // }
+    , {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] }
+    }
   ]
 };
 export default config;
