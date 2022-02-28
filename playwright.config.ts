@@ -8,16 +8,16 @@ const config: PlaywrightTestConfig = {
   use: {
     baseURL: "https://demoqa.com/",
     trace: 'on',
-    headless: false,
+    headless: true,
     viewport: { width: 1920, height: 1080 },
     screenshot: "on",
     video: 'on',
     launchOptions: {
-      slowMo: 150
+      slowMo: 30
     }
   },
   projects: [{
-    name: 'Chrome',
+    name: 'chromium',
     use: { ...devices['Desktop Chrome'] },
   }
     // , {
