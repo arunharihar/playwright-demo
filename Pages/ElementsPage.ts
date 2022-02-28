@@ -270,7 +270,7 @@ export class TeamQAElementPage {
 
     public async fileUpload() {
         //Locations ot Path
-        const filePath = 'C://Arun//Learnings//Playwright//Playwright-allure-report-Arun//testData//sampleFile.jpeg';
+        const filePath = 'testData\\sampleFile.jpeg';
         this.page.once("filechooser", async (file) => {
             await file.setFiles(filePath)
         })
