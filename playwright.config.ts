@@ -20,10 +20,10 @@ const config: PlaywrightTestConfig = {
     name: 'chrome',
     use: { ...devices['Desktop Chrome'] },
   }
-    , {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] }
-    }
+    // , {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] }
+    // }
   ]
 };
 export default config;
